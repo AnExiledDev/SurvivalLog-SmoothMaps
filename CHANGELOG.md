@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Made for Survival Log 1.1.20719.
+
 ## 0.1.0
 
 - First version.

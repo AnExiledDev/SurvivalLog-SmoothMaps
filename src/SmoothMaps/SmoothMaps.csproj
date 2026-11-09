@@ -31,7 +31,7 @@
     <AssemblyMetadata Include="ModManager.Description" Value="Keeps the explore map and the contact map smooth by drawing the world behind them at a lower rate, like the game already does behind its other screens.&#10;让探索地图和联络地图保持流畅：地图背后的世界以较低频率绘制，和游戏其他界面一样。" />
     <AssemblyMetadata Include="ModManager.Author" Value="AnExiledDev" />
     <AssemblyMetadata Include="ModManager.Category" Value="Performance" />
-    <AssemblyMetadata Include="ModManager.GameVersion" Value="1.1.19611" />
+    <AssemblyMetadata Include="ModManager.GameVersion" Value="1.1.20719" />
     <AssemblyMetadata Include="ModManager.Settings" Value="Restart" />
     <AssemblyMetadata Include="ModManager.GitHub" Value="AnExiledDev/SurvivalLog-SmoothMaps" />
     <AssemblyMetadata Include="ModManager.Changelog" Value="https://github.com/AnExiledDev/SurvivalLog-SmoothMaps/blob/main/CHANGELOG.md" />
