@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.2
+
+- A change to FreezeWorldBehindMaps on the Mod Manager's Mods screen takes effect at once, even with a map open.
+- Now needs Exiled's Toolkit 0.19.0 or newer.
+- Made for Survival Log 1.1.20719.
+
 ## 0.1.1
 
 - Made for Survival Log 1.1.20719.

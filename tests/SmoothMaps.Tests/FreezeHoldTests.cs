@@ -35,4 +35,31 @@ public class FreezeHoldTests
     {
         Assert.False(FreezeHold.ShouldHold(isEnabled: false, isMapOpen: true, cachedPanelOpen: false, cachedVersion: 7, queueVersion: 7));
     }
+
+    // Turning the setting off on the Mods screen with a map open must let the held true go, or the world stays slow until the map closes.
+    [Fact]
+    public void A_held_map_is_released_when_the_setting_is_turned_off()
+    {
+        Assert.True(FreezeHold.ShouldRelease(isEnabled: false, isHolding: true));
+    }
+
+    [Fact]
+    public void Nothing_is_released_while_the_setting_is_on()
+    {
+        Assert.False(FreezeHold.ShouldRelease(isEnabled: true, isHolding: true));
+    }
+
+    [Fact]
+    public void Nothing_is_released_when_nothing_was_held()
+    {
+        Assert.False(FreezeHold.ShouldRelease(isEnabled: false, isHolding: false));
+    }
+
+    // The game only works out "is a panel open" again when the cached version differs from its queue version.
+    [Fact]
+    public void The_stale_version_differs_from_the_queue_version()
+    {
+        Assert.NotEqual(7, FreezeHold.StaleVersion(7));
+        Assert.NotEqual(int.MinValue, FreezeHold.StaleVersion(int.MinValue));
+    }
 }

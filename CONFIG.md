@@ -1,6 +1,6 @@
 # Smooth Maps settings
 
-Settings live in `BepInEx\config\com.dev.survivallog.smoothmaps.cfg`, created the first time the game starts with the mod. Edit the file while the game is closed, or change it in game on the Mod Manager's Mods screen. Changes take effect at the next game start. Delete the file to get the defaults back.
+Settings live in `BepInEx\config\com.dev.survivallog.smoothmaps.cfg`, created the first time the game starts with the mod. Edit the file while the game is closed, or change it in game on the Mod Manager's Mods screen. A change takes effect at once. Delete the file to get the defaults back.
 
 ## Maps
 

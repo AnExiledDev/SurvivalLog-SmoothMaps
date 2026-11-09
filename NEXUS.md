@@ -21,12 +21,14 @@ Smooth Maps adds nothing to your save and does not edit game files. You can remo
 [list]
 [*]Survival Log 1.1.20719. A game update can break it until the mod is updated.[/*]
 [*][url=https://www.nexusmods.com/survivallog/mods/12]BepInEx for Survival Log[/url]. Install it first.[/*]
+[*][url=https://www.nexusmods.com/survivallog/mods/61]Exiled's Toolkit[/url] 0.19.0 or newer. Smooth Maps does not load without it. It applies a setting changed on the Mod Manager's Mods screen at once, without a restart.[/*]
 [*]Optional: [url=https://www.nexusmods.com/survivallog/mods/73]Mod Manager[/url]. With it, you can change every setting in game on its Mods screen and see what each one does, without opening the config file.[/*]
 [/list]
 
 [size=5]Installation[/size]
 [list=1]
 [*]Install [url=https://www.nexusmods.com/survivallog/mods/12]BepInEx[/url] [i](if no other mods were installed before, start the game once so BepInEx finishes setup, then quit)[/i].[/*]
+[*]Install [url=https://www.nexusmods.com/survivallog/mods/61]Exiled's Toolkit[/url].[/*]
 [*]Download the zip from the Files tab.[/*]
 [*]Extract it into the game folder (the folder with [font=Courier New]SurvivalLog.exe[/font]). The zip holds a BepInEx folder, so the DLL lands in the right place. When asked, merge the folders. The result should be:
 [code]C:\Program Files (x86)\Steam\steamapps\common\Survival Log\BepInEx\plugins\SmoothMaps.dll[/code][/*]
@@ -36,7 +38,7 @@ Smooth Maps adds nothing to your save and does not edit game files. You can remo
 Delete [font=Courier New]SmoothMaps.dll[/font] from the [font=Courier New]BepInEx\plugins[/font] folder.
 
 [size=5]Configuration[/size]
-To turn it off without removing it, set [font=Courier New]FreezeWorldBehindMaps[/font] to [font=Courier New]false[/font] in [font=Courier New]BepInEx\config\com.dev.survivallog.smoothmaps.cfg[/font] while the game is closed, or on the Mod Manager's Mods screen. Changes take effect at the next game start.
+To turn it off without removing it, set [font=Courier New]FreezeWorldBehindMaps[/font] to [font=Courier New]false[/font] in [font=Courier New]BepInEx\config\com.dev.survivallog.smoothmaps.cfg[/font] while the game is closed, or on the Mod Manager's Mods screen. A change takes effect at once.
 
 [size=5]Feedback[/size]
 Found a bug or have an idea? Come say hi on the [url=https://discord.gg/trTsyxUFqg]Core Directive Discord[/url], or post in this page's Posts tab. For bugs, please include [font=Courier New]BepInEx\LogOutput.log[/font].
@@ -64,12 +66,14 @@ Smooth Maps 不会往存档里添加任何内容，也不会修改游戏文件�
 [list]
 [*]Survival Log 1.1.20719。游戏更新后模组可能暂时失效，直到模组更新为止。[/*]
 [*][url=https://www.nexusmods.com/survivallog/mods/12]BepInEx for Survival Log[/url]，请先安装。[/*]
+[*][url=https://www.nexusmods.com/survivallog/mods/61]Exiled's Toolkit[/url] 0.19.0 或更新版本。没有它本模组不会加载。它让在 Mod Manager 的「模组」界面修改的设置立即生效，无需重启。[/*]
 [*]可选：[url=https://www.nexusmods.com/survivallog/mods/73]Mod Manager[/url]。装了它，可以在游戏里它的「模组」界面修改每项设置，并看到每项的说明，不用打开配置文件。[/*]
 [/list]
 
 [size=5]安装[/size]
 [list=1]
 [*]安装 [url=https://www.nexusmods.com/survivallog/mods/12]BepInEx[/url] [i]（如果之前没有装过其他模组，先启动一次游戏，让 BepInEx 完成初始化，然后退出）[/i]。[/*]
+[*]安装 [url=https://www.nexusmods.com/survivallog/mods/61]Exiled's Toolkit[/url]。[/*]
 [*]在「文件」页下载压缩包。[/*]
 [*]把压缩包解压到游戏目录（[font=Courier New]SurvivalLog.exe[/font] 所在的文件夹）。压缩包里带有 BepInEx 文件夹，DLL 会自动放到正确位置。如果提示合并文件夹，选择合并。解压后应为：
 [code]C:\Program Files (x86)\Steam\steamapps\common\Survival Log\BepInEx\plugins\SmoothMaps.dll[/code][/*]
@@ -79,7 +83,7 @@ Smooth Maps 不会往存档里添加任何内容，也不会修改游戏文件�
 从 [font=Courier New]BepInEx\plugins[/font] 文件夹中删除 [font=Courier New]SmoothMaps.dll[/font]。
 
 [size=5]配置[/size]
-不想移除、只想关掉它的话，在游戏关闭时把 [font=Courier New]BepInEx\config\com.dev.survivallog.smoothmaps.cfg[/font] 里的 [font=Courier New]FreezeWorldBehindMaps[/font] 改为 [font=Courier New]false[/font]，或在 Mod Manager 的「模组」界面修改。改动在下次启动游戏时生效。
+不想移除、只想关掉它的话，在游戏关闭时把 [font=Courier New]BepInEx\config\com.dev.survivallog.smoothmaps.cfg[/font] 里的 [font=Courier New]FreezeWorldBehindMaps[/font] 改为 [font=Courier New]false[/font]，或在 Mod Manager 的「模组」界面修改。改动立即生效。
 
 [size=5]反馈[/size]
 发现 bug 或有好点子？欢迎来 [url=https://discord.gg/trTsyxUFqg]Core Directive Discord[/url] 打个招呼，或在本页的「Posts」标签里发帖。报告 bug 时，请附上 [font=Courier New]BepInEx\LogOutput.log[/font]。

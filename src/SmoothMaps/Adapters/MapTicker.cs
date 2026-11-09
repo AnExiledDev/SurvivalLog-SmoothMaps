@@ -20,6 +20,7 @@ public sealed class MapTicker : MonoBehaviour
     private bool _isMapOpen;
     private MapVisit? _visit;
     private int _failures;
+    private bool _isHolding;
 
     public MapTicker(IntPtr pointer) : base(pointer)
     {
@@ -52,10 +53,18 @@ public sealed class MapTicker : MonoBehaviour
 
         if (!_isMapOpen) return;
 
+        if (FreezeHold.ShouldRelease(IsEnabled, _isHolding))
+        {
+            _isHolding = false;
+            ContainerTabHotKey.s_cachedQueueVersion = FreezeHold.StaleVersion(version);
+            Log("FreezeWorldBehindMaps turned off: the world behind the map is drawn at full rate again");
+        }
+
         if (FreezeHold.ShouldHold(IsEnabled, _isMapOpen, ContainerTabHotKey.s_cachedAnyPanelOpen, ContainerTabHotKey.s_cachedQueueVersion, version))
         {
             ContainerTabHotKey.s_cachedQueueVersion = version;
             ContainerTabHotKey.s_cachedAnyPanelOpen = true;
+            _isHolding = true;
         }
 
         _visit?.Add(Time.unscaledDeltaTime, IsWorldFrozen(), Application.isFocused);
@@ -66,6 +75,7 @@ public sealed class MapTicker : MonoBehaviour
         if (isOpen == _isMapOpen) return;
 
         _isMapOpen = isOpen;
+        _isHolding = false;
         if (isOpen)
         {
             _visit = new MapVisit();
