@@ -1,10 +1,10 @@
 Name: Smooth Maps
-Summary: Stops the explore map and the contact map from lagging. The game draws the world behind its other screens at a lower rate, but behind the maps it keeps drawing at full rate. Smooth Maps does the same for the maps, so the map gets your graphics card. It helps most on laptops. Nothing goes into your save, so remove it any time.
+Summary: Stops the explore map and the contact map from lagging. The game draws the world behind most screens at a lower rate, but behind the maps it keeps the full rate. Smooth Maps makes the game use the lower rate behind the maps too, so the map gets more of your graphics card. It helps most on laptops. Nothing goes into your save, so you can remove it any time.
 
 Description (BBCode):
 [center][img]https://sldb.core-directive.com/media/save/1-save-safe.png[/img][/center]
 
-Does the explore map or the contact map stutter while the rest of the game runs fine? Behind the bag, the stove and most other screens, Survival Log stops drawing the world at full speed, since you can't see it anyway. The maps were left off that list, so the whole world keeps drawing at full rate behind them and the map gets what is left of your graphics card. Smooth Maps puts the maps on the list.
+When you open the bag, the stove or most other screens, Survival Log draws the world behind them at a lower rate, since you can't see it anyway. It doesn't do that for the explore map or the contact map, so the whole world keeps drawing at full rate behind them and the map only gets what's left of your graphics card. That's why the maps can stutter while the rest of the game runs fine. Smooth Maps makes the game draw the world at the lower rate behind the maps too.
 
 [size=5]Main features[/size]
 [list]
@@ -21,7 +21,7 @@ Smooth Maps adds nothing to your save and does not edit game files. You can remo
 [list]
 [*]Survival Log 1.1.20719. A game update can break it until the mod is updated.[/*]
 [*][url=https://www.nexusmods.com/survivallog/mods/12]BepInEx for Survival Log[/url]. Install it first.[/*]
-[*][url=https://www.nexusmods.com/survivallog/mods/61]Exiled's Toolkit[/url] 0.19.0 or newer. Smooth Maps does not load without it. It applies a setting changed on the Mod Manager's Mods screen at once, without a restart.[/*]
+[*][url=https://www.nexusmods.com/survivallog/mods/61]Exiled's Toolkit[/url] 0.19.0 or newer. Smooth Maps does not load without it. The Toolkit is what makes a setting you change on the Mod Manager's Mods screen apply right away, without a restart.[/*]
 [*]Optional: [url=https://www.nexusmods.com/survivallog/mods/73]Mod Manager[/url]. With it, you can change every setting in game on its Mods screen and see what each one does, without opening the config file.[/*]
 [/list]
 
@@ -38,11 +38,11 @@ Smooth Maps adds nothing to your save and does not edit game files. You can remo
 Delete [font=Courier New]SmoothMaps.dll[/font] from the [font=Courier New]BepInEx\plugins[/font] folder.
 
 [size=5]Configuration[/size]
-To turn it off without removing it, set [font=Courier New]FreezeWorldBehindMaps[/font] to [font=Courier New]false[/font] in [font=Courier New]BepInEx\config\com.dev.survivallog.smoothmaps.cfg[/font] while the game is closed, or on the Mod Manager's Mods screen. A change takes effect at once.
+To turn Smooth Maps off without removing it, set [font=Courier New]FreezeWorldBehindMaps[/font] to [font=Courier New]false[/font] in [font=Courier New]BepInEx\config\com.dev.survivallog.smoothmaps.cfg[/font] while the game is closed, or on the Mod Manager's Mods screen. A change takes effect at once.
 
 [size=5]Feedback[/size]
 Found a bug or have an idea? Come say hi on the [url=https://discord.gg/trTsyxUFqg]Core Directive Discord[/url], or post in this page's Posts tab. For bugs, please include [font=Courier New]BepInEx\LogOutput.log[/font].
-To reach me directly, message [b]exiled.dev[/b] on Discord; you can find me in the [url=https://discord.gg/MZGg4gQAUe]official Survival Log Discord[/url]. I'm also on X as [url=https://x.com/AnExiledDev]@AnExiledDev[/url].
+To reach me directly, message [b]exiled.dev[/b] on Discord. You can find me in the [url=https://discord.gg/MZGg4gQAUe]official Survival Log Discord[/url]. I'm also on X as [url=https://x.com/AnExiledDev]@AnExiledDev[/url].
 
 [size=5]Source and license[/size]
 Open source under MIT: [url=https://github.com/AnExiledDev/SurvivalLog-SmoothMaps]github.com/AnExiledDev/SurvivalLog-SmoothMaps[/url]
@@ -50,7 +50,7 @@ Open source under MIT: [url=https://github.com/AnExiledDev/SurvivalLog-SmoothMap
 [line]
 [size=5]简体中文[/size]
 
-探索地图或联络地图卡顿，而游戏其他部分都很流畅？打开背包、灶台等大多数界面时，Survival Log 会降低背后世界的绘制速度，反正你也看不到。但地图不在这个列表里，所以地图背后的整个世界仍在全速绘制，地图只能用显卡剩下的那点余力。Smooth Maps 把地图加进了这个列表。
+打开背包、灶台等大多数界面时，Survival Log 会降低背后世界的绘制频率，反正你也看不到。探索地图和联络地图却没有这样处理，地图背后的整个世界仍在全速绘制，地图只能用显卡剩下的那点余力。所以游戏其他部分都很流畅，地图却会卡顿。Smooth Maps 让游戏在地图背后也以较低频率绘制世界。
 
 [size=5]主要功能[/size]
 [list]
@@ -66,7 +66,7 @@ Smooth Maps 不会往存档里添加任何内容，也不会修改游戏文件�
 [list]
 [*]Survival Log 1.1.20719。游戏更新后模组可能暂时失效，直到模组更新为止。[/*]
 [*][url=https://www.nexusmods.com/survivallog/mods/12]BepInEx for Survival Log[/url]，请先安装。[/*]
-[*][url=https://www.nexusmods.com/survivallog/mods/61]Exiled's Toolkit[/url] 0.19.0 或更新版本。没有它本模组不会加载。它让在 Mod Manager 的「模组」界面修改的设置立即生效，无需重启。[/*]
+[*][url=https://www.nexusmods.com/survivallog/mods/61]Exiled's Toolkit[/url] 0.19.0 或更新版本。没有它本模组不会加载。有了 Exiled's Toolkit，在 Mod Manager 的「模组」界面修改的设置会立即生效，无需重启。[/*]
 [*]可选：[url=https://www.nexusmods.com/survivallog/mods/73]Mod Manager[/url]。装了它，可以在游戏里它的「模组」界面修改每项设置，并看到每项的说明，不用打开配置文件。[/*]
 [/list]
 
@@ -83,7 +83,7 @@ Smooth Maps 不会往存档里添加任何内容，也不会修改游戏文件�
 从 [font=Courier New]BepInEx\plugins[/font] 文件夹中删除 [font=Courier New]SmoothMaps.dll[/font]。
 
 [size=5]配置[/size]
-不想移除、只想关掉它的话，在游戏关闭时把 [font=Courier New]BepInEx\config\com.dev.survivallog.smoothmaps.cfg[/font] 里的 [font=Courier New]FreezeWorldBehindMaps[/font] 改为 [font=Courier New]false[/font]，或在 Mod Manager 的「模组」界面修改。改动立即生效。
+想关掉 Smooth Maps 又不想移除的话，在游戏关闭时把 [font=Courier New]BepInEx\config\com.dev.survivallog.smoothmaps.cfg[/font] 里的 [font=Courier New]FreezeWorldBehindMaps[/font] 改为 [font=Courier New]false[/font]，或在 Mod Manager 的「模组」界面修改。改动立即生效。
 
 [size=5]反馈[/size]
 发现 bug 或有好点子？欢迎来 [url=https://discord.gg/trTsyxUFqg]Core Directive Discord[/url] 打个招呼，或在本页的「Posts」标签里发帖。报告 bug 时，请附上 [font=Courier New]BepInEx\LogOutput.log[/font]。

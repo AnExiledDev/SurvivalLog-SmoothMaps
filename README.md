@@ -2,7 +2,7 @@
 
 Keeps the explore map and the contact map smooth.
 
-Behind the bag, the stove and most other screens, Survival Log stops drawing the world at full speed, because you can't see it anyway. The maps are left off that list, so the game keeps drawing the whole world behind them at full rate. On a laptop or a busy graphics card that leaves too little for the map itself, and it stutters or lags. Smooth Maps puts the maps on the list.
+When you open the bag, the stove or most other screens, Survival Log draws the world behind them at a lower rate, because you can't see it anyway. It doesn't do that for the explore map or the contact map, so the whole world keeps drawing at full rate behind them. On a laptop or a busy graphics card that leaves too little for the map itself, and the map stutters. Smooth Maps makes the game draw the world at the lower rate behind the maps too.
 
 ## Features
 
@@ -16,7 +16,7 @@ Smooth Maps adds nothing to your save and does not edit game files. You can remo
 
 - Survival Log 1.1.20719. Built for this version. A game update can break it until the mod is updated.
 - The [BepInEx Pack for Survival Log](https://www.nexusmods.com/survivallog/mods/12), the BepInEx 6 (IL2CPP) build for the game.
-- [Exiled's Toolkit](https://github.com/AnExiledDev/SurvivalLog-ExiledToolkit) 0.19.0 or newer. Smooth Maps does not load without it. It applies a setting changed on the Mod Manager's Mods screen at once, without a restart.
+- [Exiled's Toolkit](https://github.com/AnExiledDev/SurvivalLog-ExiledToolkit) 0.19.0 or newer. Smooth Maps does not load without it. The Toolkit is what makes a setting you change on the Mod Manager's Mods screen apply right away, without a restart.
 - Optional: [Mod Manager](https://www.nexusmods.com/survivallog/mods/73). With it, you can change every setting in game on its Mods screen and see what each one does, without opening the config file.
 
 ## Install
@@ -45,7 +45,7 @@ Check `BepInEx\LogOutput.log` for `Smooth Maps 0.1.2 started`. Each time you ope
 
 Found a bug, have an idea, or something feels off? Come say so on the Core Directive Discord: https://discord.gg/trTsyxUFqg . When reporting a bug, attach `BepInEx\LogOutput.log`.
 
-To reach me directly, message `exiled.dev` on Discord; you can find me in the [official Survival Log Discord](https://discord.gg/MZGg4gQAUe). I'm also on X as [@AnExiledDev](https://x.com/AnExiledDev).
+To reach me directly, message `exiled.dev` on Discord. You can find me in the [official Survival Log Discord](https://discord.gg/MZGg4gQAUe). I'm also on X as [@AnExiledDev](https://x.com/AnExiledDev).
 
 ## Build
 
@@ -57,7 +57,7 @@ dotnet build src/SmoothMaps -c Release -p:GameDir="C:\path\to\Survival Log" -p:T
 
 `GameDir` is the game folder and `ToolkitDll` is a built `ExiledToolkit.dll`. The output DLL is at `src\SmoothMaps\bin\Release\SmoothMaps.dll`.
 
-The unit tests cover the pure rules and need nothing from the game:
+The unit tests need nothing from the game:
 
 ```
 dotnet test tests/SmoothMaps.Tests
